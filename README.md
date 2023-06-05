@@ -54,6 +54,9 @@ insertion_sort(list_of_nums)
 print(list_of_nums)
 ```
 ## Output:
-<br>![output](./pe2.png)
+i)	#Selection Sort
+<br>![output](./ex4(a)(p).png)
+ii)	#Insertion Sort
+<br>![output](./ex4(b)(p).png)
 ## Result:
 Thus the program is written to perform selection sort and insertion sort using python programming.
