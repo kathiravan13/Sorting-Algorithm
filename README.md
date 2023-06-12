@@ -21,42 +21,43 @@ To write a program to perform selection sort and insertion sort using python pro
 i)	#Selection Sort
 ```
 Program to sort the elements in the list using the Selection Sort algorithm.
-Developed by:thrikeswar
-RegisterNumber: 212222230162
-'''
+Developed by:kathiravan.p
+RegisterNumber: 212222230063
+
 def selection_sort(nums):
     for i in range(len(nums)):
-        lowest_value_index=i
+        low=i
         for j in range(i+1,len(nums)):
-            if nums[j]<nums[lowest_value_index]:
-                lowest_value_index=j
-        nums[i],nums[lowest_value_index]=nums[lowest_value_index],nums[i]
+            if nums[j]<nums[low]:
+                low=j
+        nums[i],nums[low]=nums[low],nums[i]
+    print(nums)
 list_of_nums = eval(input())
 selection_sort(list_of_nums)
-print(list_of_nums)
 ```
 ii)	#Insertion Sort
 ```
 Program to sort the elements in the list using the Insertion Sort algorithm.
 Developed by:thrikeswar
 RegisterNumber:212222230162
-'''
+
 def insertion_sort(nums):
     for i in range(1,len(nums)):
-        item_to_insert=nums[i]
+        insert=nums[i]
         j=i-1
-        while j >= 0 and nums[j] > item_to_insert:
+        while j>=0 and nums[j]>insert:
             nums[j+1]=nums[j]
             j-=1
-        nums[j+1]=item_to_insert
+        nums[j+1]=insert
+    print(nums)
 list_of_nums = eval(input())
 insertion_sort(list_of_nums)
-print(list_of_nums)
 ```
 ## Output:
-i)	#Selection Sort
-<br>![output](./ex4(a)(p).png)
-ii)	#Insertion Sort
-<br>![output](./ex4(b)(p).png)
+![2023-06-12 (1)](https://github.com/kathiravan13/Sorting-Algorithm/assets/119831303/4fe2cdf2-0907-44a3-b796-1dccb296fd1d)
+
+
+![2023-06-12 (2)](https://github.com/kathiravan13/Sorting-Algorithm/assets/119831303/f3520a5f-0149-43f2-897f-bbb1b4244fef)
+
 ## Result:
 Thus the program is written to perform selection sort and insertion sort using python programming.
